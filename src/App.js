@@ -18,6 +18,14 @@ function App() {
   return (
     <div className="App">
       <h1>Filter Countries</h1>
+      { countries.map( c => (
+        <div>
+          <h3>{c.name}</h3>
+          <img src={c.flag} />
+        </div>
+      ))
+
+      }
     </div>
   );
 }
